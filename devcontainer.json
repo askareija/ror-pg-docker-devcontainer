@@ -1,0 +1,26 @@
+{
+	"name": "Ruby On Rails with Postgres dev container ALPINE",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "rms_pos",
+	"workspaceFolder": "/workspace",
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/ash",
+		"ruby.useLanguageServer": true,
+		"ruby.lint": {
+			"rubocop": {
+				"lint": true,
+				"rails": true
+			}
+		},
+		"ruby.format": "rubocop",
+		"editor.tabSize": 2
+	},
+	"extensions": [
+		"rebornix.ruby",
+		"castwide.solargraph",
+		"misogi.ruby-rubocop"
+	],
+	"forwardPorts": [
+		3000
+	],
+}
